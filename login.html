@@ -1,0 +1,32 @@
+<!doctype html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Log in</title>
+		<h1>Log in</h1>
+		<style>
+			body{
+				font-family: verdana, Helvetica, sans-serif;
+			}
+		</style>
+		<script>
+			function login(){
+				var user = document.getElementById("user");
+				var password = document.getElementById("ps");
+				if (user.value == password.value){
+					alert("Log in succesfully");
+				}
+				else{
+					alert("Log in failed");
+				}
+			}
+		</script>
+	</head>
+	<br>
+	<body>
+		<input type="text" id="user" />
+		<br><br>
+		<input type="password" id="ps" />
+		<br><br>
+		<input type="button" onclick="login()" id="bt" value="Log in"/>
+	</body>
